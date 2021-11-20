@@ -1,10 +1,12 @@
 #include "multilink.h"
 
+// This is an example of multilink lists
+// Sparse Matrix
+
 int main(){
     int option;
     system("clear");
     do{
-        // system("clear");
         printf("\n -----ENTER YOUR CHOIUCE-----");
         printf("\n 1. Create Upper Triangular Matrix");
         printf("\n 2. Create Lower Triangular Matrix");

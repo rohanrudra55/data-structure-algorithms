@@ -1,5 +1,6 @@
 #include "polynomial.h"
 
+// This is an example of multilink lists
 // Polinomial operations
 
 int main(){
