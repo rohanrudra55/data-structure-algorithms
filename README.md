@@ -36,6 +36,15 @@
 - Jump Search
 - Fibonacci Search
 
+---
+
+<aside>
+💡 Tower of Hanoi (Using recursion under stacks)
+
+</aside>
+
+![Tower of hanoi@2x-2.png](img1.png)
+
 ## 📜References
 
 ---
