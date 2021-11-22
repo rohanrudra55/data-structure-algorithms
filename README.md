@@ -43,7 +43,7 @@
 
 </aside>
 
-![Tower of hanoi@2x-2.png](img1.png)
+![Tower of hanoi@2x-2.png](asset.png)
 
 ## 📜References
 
