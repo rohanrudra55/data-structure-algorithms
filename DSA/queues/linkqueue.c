@@ -1,9 +1,17 @@
 #include "linkqueue.h"
 
+// Issue create_queue not working 
+// Giving Segmentation fault
+
 int main(){
     int option;
     int value;
-    system("clear");
+    struct queue *new_q;
+    create_queue(new_q);
+    if(new_q->front==NULL)
+        printf("AA");
+    exit(0);
+    // system("clear");
     printf(" *** QUEUE Commands ***\n");
     printf(" 1. Push value\n");
     printf(" 2. Pop value\n");
@@ -17,21 +25,21 @@ int main(){
         switch(option){
             case 1:
                 scanf("%d",&value);
-                push(value);
+                new_q=push(new_q,value);
                 break;
             case 2:
-                value=pop();
-                if(value!=-1)
-                    printf("Poped [%d]\n",value);
+                new_q=delete_ele(new_q);
                 break;
             case 3:
-                peek();
+                value=peek(new_q);
+                if(!abs(value))
+                    printf(" First: %d",value);
                 break;
             case 4:
-                display();
+                display(new_q);
                 break;
             case 5:
-                reset();
+                reset(new_q);
                 break;
         }
     }while(option!=6);
