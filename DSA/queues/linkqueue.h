@@ -29,7 +29,7 @@ node *create_node(int value){
     return new_node;
 }
 void create_queue(struct queue *q){
-    q=(struct queue*)malloc(sizeof(struct queue));
+    // q=(struct queue*)malloc(sizeof(struct queue));
     q->front=NULL;
     q->rear=NULL;
 }
@@ -76,6 +76,7 @@ void display(struct queue* q){
             ptr=ptr->next;
         }
     }
+    printf("\n");
 }
 void reset(struct queue *q){
     create_queue(q);

@@ -2,16 +2,17 @@
 
 // Issue create_queue not working 
 // Giving Segmentation fault
+// As if we are using manual memory location
 
 int main(){
     int option;
     int value;
-    struct queue *new_q;
+    struct queue *new_q=(struct queue*)malloc(sizeof(struct queue));
     create_queue(new_q);
-    if(new_q->front==NULL)
-        printf("AA");
-    exit(0);
-    // system("clear");
+    // if(new_q->front==NULL)
+        // printf("AA");
+    // exit(0);
+    system("clear");
     printf(" *** QUEUE Commands ***\n");
     printf(" 1. Push value\n");
     printf(" 2. Pop value\n");
