@@ -12,9 +12,9 @@ void multiply(int a[3][3], int b[3][3], int x) {
 	for (int i = 0; i < 3; i++) {
 		for (int j = 0; j < x; j++) {
 			a[i][j] = mul[i][j];
-			// printf("%d\t", a[i][j]);
+			printf("%d\t", a[i][j]);
 		}
-		// printf("\n");
+		printf("\n");
 	}
 }
 
@@ -33,6 +33,8 @@ int power(int F[3][3], int n) {
 	return F[0][0] + F[0][1] ;
 }
 int main() {
+	// 0, 1, 2, 3, 4, 5, 6, 7, 8,  9,  10, ...
+	// 3, 0, 2, 3, 2, 5, 5, 7, 10, 12, 17, 22, 29, 39
 	printf("Enter the n:\t");
 	int n;
 	scanf("%d", &n);
@@ -46,9 +48,9 @@ int main() {
 	else if (n == 3)
 		printf("2");
 	else {
-		power(F, n - 1);
+		power(F, n - 2);
 		multiply(F, V, 1);
-		printf("P(N): %d", F[0][0]);
+		printf("P(N): %d\n", F[2][0]);
 	}
 
 	return 0;

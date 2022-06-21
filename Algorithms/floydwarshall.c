@@ -12,17 +12,17 @@ void floydWarshall (int graph[V][V]) {
 
 	for (k = 0; k < V; k++)
 	{
-
 		for (i = 0; i < V; i++)
 		{
-
 			for (j = 0; j < V; j++)
 			{
+				// printf("[%d,%d] + [%d,%d] < [%d,%d]\n", i, k, k, j, i, j);
 				if (dist[i][k] + dist[k][j] < dist[i][j])
 					dist[i][j] = dist[i][k] + dist[k][j];
 			}
 		}
 	}
+
 	printSolution(dist);
 }
 void printSolution(int dist[][V])
