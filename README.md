@@ -38,12 +38,6 @@
 
 ---
 
-<aside>
-💡 Tower of Hanoi (Using recursion under stacks)
-
-</aside>
-
-![Tower of hanoi@2x-2.png](asset.png)
 
 ## 📜References
 
